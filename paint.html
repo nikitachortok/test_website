@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Paint</title>
+    <link rel="stylesheet" href="assets/css/layout.css">
+</head>
+<body>
+<header class="header">
+	<div class="logo"></div>
+	<h1>Paint</h1>
+</header>
+<div class="container">
+	<main class="center column">
+        <article>
+            <h1>Heading</h1>
+            <canvas id="draw" width="490" height="220" style="border: 1px solid black;"></canvas>
+            <div style="float: left;">
+                <p style="margin-right: 10px;">Paint color
+                <input id="paintColor" type="color" value="#000000"></p>
+                <p style="margin-right: 10px;">Paint size
+                    <select id="paintSize">
+                        <option value="5">5px</option>
+                        <option value="10">10px</option>
+                        <option value="15">15px</option>
+                        <option value="20">20px</option>
+                    </select></p>
+                <input id="btClear" type="submit" value="CLEAR" onclick="clearCanvas()">
+            </div>
+          </article>
+	</main>
+	<nav class="left column">
+		<h3>Left heading</h3>
+		<ul>
+			<li><a href="index.html">Main page</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="media.html">Media</a></li>
+			<li><a href="about.html">About</a></li>		
+			<li><a href="slider.html">Slider</a></li>
+            <li><a href="table.html">Table</a></li>
+            <li><a href="paint.html">Paint</a></li>
+		</ul>
+		
+	</nav>
+	<div class="right column">
+		<h3>Right heading</h3>
+		
+	</div>
+</div>
+<div class="footer-wrapper">
+	<footer class="footer">
+		<div class="logo"></div>
+		<p>Footer...</p>
+	</footer>
+</div>
+</body>
+</html>
+<script src="assets/js/paint.js"></script>
